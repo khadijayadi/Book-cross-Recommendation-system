@@ -54,6 +54,7 @@ Prior to the modeling part of the recommendation system, one part that is necess
 
 
 Figure 1: Distribution of book Ratings
+![Alt text](images/fig2.png)
 
 This histogram -see figure 1- shows the count of ratings of book and the range of book rating along the dataset. The majority of our ratings are at the high end of the scale, which means that its a right skkewed histogram, with many falling between 7 and 10, a sign that users either rate generously, or don't bother rating books they don't like. However , Ratings between (1–4)  happen much less frequently, possibly inducing a positivity bias in the extracted corpus. This observation informs the modeling step, as collaborative filtering models may need to account for skewed rating behavior to avoid recommending only overly popular books.
 
@@ -61,6 +62,7 @@ This histogram -see figure 1- shows the count of ratings of book and the range o
 
 
 Figure 2: Average book rating by User age
+![Alt text](images/fig3.png)
 
 This chart illustrates how the average rating behaviour changes with user age, as shown in figure 2. Younger users (teens) generally assign slightly higher values to books compared to older users, and we observe that the ratings for the high age range fluctuate a bit, likely due to having fewer data points being averaged together. This phenomenon is important to recognize because it indicates that age may influence one’s perspective and evaluation of a book. If we incorporate this into the personalization based on demographics in the recommendation model later on, this age-based pattern could help improve targeting or clustering.
 
@@ -68,6 +70,7 @@ This chart illustrates how the average rating behaviour changes with user age, a
 
 
 Figure 3: Top 10 Users by Average rating counts
+![Alt text](images/fig4.png)
 
 This visualization displays the top 10 users who rated most of the movies. It also helps us to understand who the signal users in the system are and how much  they can impact the recommendation model -see figure 3. Recognizing power users in turn, facilitates collaborative filtering by being able to make suggestions for new and/or less active or inactive users, basing those suggestions on the behavior of these active profiles. However, they may also bring some bias, thus how to deal with their influence is valuable to model tuning.
 
@@ -162,6 +165,7 @@ This result indicates that, for this dataset, item similarity is the best strate
 
 
 Figure 4: Recommendation Models Comparison
+![Alt text](images/fig5.png)
 
 VII.References :
 
