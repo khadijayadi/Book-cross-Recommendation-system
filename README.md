@@ -38,7 +38,7 @@ III.Data Preprocessing :
 To get the data ready for modelling , first I combined the cleaned ratings dataset with the books dataset using  books ISBN column join, and then I combined it with the users dataset using User-ID . Book descriptions, book ratings, and user information are all now included in the one dataset.  Every component required to construct recommendation systems that rely on collaborative analysis and content is included in the entire dataset.
 
 Here is a snapshot from my code of how the cleaned dataframe looks like : (only the first 10 rows )
-
+![Alt text](images/fig1.png)
 
 
 2.Train/Test split :
